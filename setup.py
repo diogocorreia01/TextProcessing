@@ -1,7 +1,6 @@
 from codecs import open
 from os.path import join, abspath, dirname
-from setuptools import setup, find_packages
-import os
+from setuptools import setup
 
 here = abspath(dirname(__file__))
 
@@ -12,14 +11,9 @@ setup(
     name="TextProcessing",
     version="1.0",
     description="Projeto 2 - TAP",
-    long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/diogocorreia01/PublicNewsArchive.git",
     author="Diogo Correia"
            "João Alexandre",
-    author_email="diogo.correia01@outlook.com",
-    packages=find_packages(),
-    include_package_data=True,
     install_requires=[
         'spacy',
         'cleantext',
